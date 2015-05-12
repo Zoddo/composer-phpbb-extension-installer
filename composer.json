@@ -1,0 +1,30 @@
+{
+  "name": "zoddo/composer-phpbb-extension-installer",
+  "type": "composer-plugin",
+  "description": "A composer plugin, to install phpbb-extension composer packages in ext directory instead of the default composer installation path which is in the vendor folder",
+  "keywords": ["composer", "plugin", "phpbb", "extension", "ext"],
+  "homepage": "https://github.com/Zoddo/composer-phpbb-extension-installer",
+  "license": "GPLv2",
+  "authors": [
+    {
+      "name": "Zoddo",
+      "email": "zoddo.ino@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.3",
+    "composer-plugin-api": "*"
+  },
+  "require-dev": {
+    "composer/composer": "dev-master"
+  },
+  "autoload": {
+    "psr-0": {"Zoddo\\PhpbbExtensionInstaller": "src/"}
+  },
+  "extra": {
+    "class": "Zoddo\\PhpbbExtensionInstaller\\PhpbbExtensionInstallerPlugin",
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  }
+}
